@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Exo:wght@900&family=Manrope:wght@600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  font-family: 'Exo', sans-serif;
+}
+:root {
+  --bg-color: #050718;
+  --second-bg-color: #171820;
+  --brand-color: #80b840;
+  --text-color: #fff;
+  --font-family: 'Exo', sans-serif;
+  --second-family: 'DM Sans', sans-serif;
+  --third-family: 'Poppins', sans-serif;
+  --font3: 'Manrope', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  transition: 0.3s;
+  background: var(--bg-color);
+}
+
+/**========== HEADER STERT HIEAR=============== */
+
+header {
+  position: sticky;
+  top: 0;
+}
+header nav {
+  width: 100%;
+  background-color: var(--second-bg-color);
+}
+header nav .logo {
+  font-size: 30px;
+  font-family: var(--font-family);
+  color: var(--brand-color);
+}
+header nav .main-ul li {
+  margin: 0 25px;
+}
+header nav .main-ul a {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 114%;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+}
+header nav .main-ul a:hover {
+  color: var(--brand-color);
+}
+
+/**========== HEADER END HIEAR=============== */
+
+/**========== BEANER STERT HIEAR============= */
+
+
+
+/**========== BEANER END HIEAR=============== */
