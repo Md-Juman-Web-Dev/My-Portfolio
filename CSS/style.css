@@ -32,6 +32,7 @@ span {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -189,3 +190,61 @@ header nav .main-ul a:hover {
   width: 500px;
 }
 /**========== BEANER END HIEAR=============== */
+/**========== ABOUT STERT HIEAR=============== */
+#about {
+  margin: 180px 0 200px;
+}
+#about h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+}
+#about .text-border {
+  height: 2px;
+  width: 300px;
+  background: #80b840;
+}
+#about .about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#about .about-border {
+  width: 300px;
+  height: 2px;
+  background: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 21px 0 29px;
+}
+#about .border-whigt {
+  height: 3px;
+  width: 120px;
+  background: var(--brand-color);
+}
+#about .about-me h3 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+}
+#about .about-me p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+/**========== ABOUT END HIEAR=============== */
+
+/**========== MY Skills stert HIEAR=============== */
+
+/**========== MY Skills END HIEAR=============== */
