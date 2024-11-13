@@ -1,0 +1,42 @@
+@media (max-width: 991px) {
+  header nav .main-ul li {
+    margin: 10px;
+  }
+  /* baner right */
+  #baner .right-side .img-box {
+    width: 400px;
+    height: 400px;
+  }
+  #baner .right-side .img-box .img-bg {
+    width: 320px;
+    height: 320px;
+  }
+  #baner .right-side .img-box .img-shadow {
+    width: 360px;
+    height: 360px;
+  }
+  #baner .right-side {
+    margin-top: 10px;
+  }
+  #baner .left-side .fest-hello {
+    margin-top: 57px;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 78%;
+    color: #fff;
+  }
+  /* baner left  */
+  #baner .left-side h1 {
+    font-size: 50px;
+    margin: 22px 0 0px;
+  }
+  #baner .left-side .skills .typing {
+    font-size: 40px;
+    margin: 0;
+    display: block;
+  }
+  #baner .icons {
+    margin: 5px 0 20px;
+  }
+}
