@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,17 +8,20 @@
   outline: none;
   border: none;
   list-style: none;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 :root {
-  --bg-color: #050718;
-  --second-bg-color: #171820;
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
   --brand-color: #00eeff;
   --text-color: #fff;
-  --font-family: 'Exo', sans-serif;
+  --font-family: 'Montserrat', sans-serif;
   --second-family: 'DM Sans', sans-serif;
   --third-family: 'Poppins', sans-serif;
   --font3: 'Manrope', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -67,7 +72,6 @@ nav .menu-btn {
 header nav .logo {
   font-weight: 900;
   font-size: 30px;
-  font-family: var(--font-family);
   color: var(--brand-color);
 }
 header nav .main-ul li {
@@ -89,6 +93,13 @@ header nav .main-ul a:hover {
 /**========== HEADER END HIEAR=============== */
 
 /**========== BEANER STERT HIEAR============= */
+#home {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  padding: 85px 0 190px;
+}
+
 #home .left-side .fest-hello {
   font-weight: 200;
   font-size: 32px;
@@ -104,6 +115,13 @@ header nav .main-ul a:hover {
 }
 #home .left-side h1 span {
   color: var(--brand-color);
+}
+#home .left-side p {
+  font-size: 18px;
+  color: #fff;
+  padding: 0 0 12px;
+  letter-spacing: 1px;
+  line-height: 27px;
 }
 #home .left-side .skills {
   font-weight: 700;
@@ -123,7 +141,6 @@ header nav .main-ul a:hover {
   margin-top: 66px;
 }
 #home .left-side .hireMe-btn {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 30px;
   line-height: 74%;
@@ -194,14 +211,17 @@ header nav .main-ul a:hover {
 /**========== BEANER END HIEAR=============== */
 /**========== ABOUT STERT HIEAR=============== */
 #about {
-  margin: 180px 0 200px;
+  background: var(--second-bg-color);
+  width: 100%;
+  height: 300px;
 }
 #about h2 {
   font-weight: 700;
-  font-size: 50px;
-  line-height: 120%;
-  text-transform: uppercase;
+  font-size: 36px;
   color: var(--text-color);
+}
+#about h2 span {
+  color: var(--brand-color);
 }
 #about .text-border {
   height: 2px;
@@ -215,7 +235,7 @@ header nav .main-ul a:hover {
   flex-direction: column;
 }
 .about-border {
-  width: 300px;
+  width: 220px;
   height: 2px;
   background: var(--text-color);
   margin: 21px 0 29px;
@@ -224,7 +244,7 @@ header nav .main-ul a:hover {
 }
 .border-whigt {
   height: 3px;
-  width: 120px;
+  width: 100px;
   background: var(--brand-color);
 }
 #about .about-me h3 {
@@ -251,18 +271,23 @@ header nav .main-ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 95px 0 56px;
 }
 #mySkill .titel {
   flex-direction: column;
   align-items: center;
 }
+#mySkill .titel span {
+  color: var(--brand-color);
+}
 #mySkill h2 {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 100%;
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 77px;
 }
 #mySkill .imgBox img {
   width: 100px;
@@ -279,7 +304,6 @@ header nav .main-ul a:hover {
 }
 #mySkill .skillLavelBox .skillName {
   margin-left: 23px;
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 22px;
   color: var(--text-color);
@@ -321,7 +345,6 @@ header nav .main-ul a:hover {
   width: 15%;
 }
 #mySkill .skilllavel .parsentText {
-  font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
   color: var(--text-color);
@@ -331,3 +354,214 @@ header nav .main-ul a:hover {
   right: 14px;
 }
 /**========== MY Skills END HIEAR=============== */
+/**========== MY SERVICES SERT HIEAR=============== */
+#services {
+  width: 100%;
+  background: var(--second-bg-color);
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#services h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0 0 100px 0;
+}
+#services h2 span {
+  color: var(--brand-color);
+}
+
+#services .serviceCaet {
+  border-radius: 16px;
+  width: 385px;
+  height: 484px;
+  background: rgba(31, 36, 45, 0.8);
+  padding: 20px 30px;
+  margin: 10px;
+  border: 2px solid rgba(31, 36, 45, 0.8);
+  transition: 0.4s;
+}
+#services .serviceCaet:hover {
+  border: 2px solid var(--brand-color);
+}
+#services .serviceCaet .iconBox {
+  width: 100%;
+  text-align: center;
+}
+#services .serviceCaet .iconBox iconify-icon {
+  font-size: 70px;
+  color: var(--brand-color);
+  margin-top: 47px;
+}
+#services .serviceCaet h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 138%;
+  text-align: center;
+  color: var(--brand-color);
+  margin: 33px 0;
+}
+#services .serviceCaet p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--text-color);
+}
+#services .serviceCaet .cartBtn {
+  text-align: center;
+  margin-top: 30px;
+}
+#services .serviceCaet .cartBtn a {
+  border-radius: 20px;
+  padding: 6px 111px;
+  background: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--second-bg-color);
+  transition: 0.3s;
+}
+#services .serviceCaet .cartBtn a:hover {
+  background: var(--brand-color);
+  color: var(--text-color);
+}
+/**========== MY SERVICES END HIER=============== */
+
+/**========CONTACT ME START HIER ========= */
+#Portfolio {
+  padding: 65px 0 130px;
+}
+#Portfolio h2 {
+  margin-bottom: 65px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text-color);
+}
+#Portfolio .pfBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  width: 387px;
+  height: 259px;
+  margin: 10px 3px;
+}
+#Portfolio .animetion {
+  position: absolute;
+  border-radius: 16px;
+  width: 376px;
+  height: 259px;
+  background: linear-gradient(180deg, #0ef 0%, rgba(255, 255, 255, 0) 100%);
+  top: 0;
+  left: 12px;
+  opacity: 0;
+  transform: translatey(100%);
+  transition: 0.5s;
+}
+#Portfolio .pfBox:hover .animetion {
+  transform: translatey(0%);
+  opacity: 1;
+}
+
+#Portfolio .animetion h3 {
+  font-weight: 700;
+  padding-top: 77px;
+  font-size: 28px;
+  line-height: 129%;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/**========CONTACT ME END HIER ========= */
+/**======== START HIER ========= */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--second-bg-color);
+  padding-bottom: 100px;
+}
+#contact h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text-color);
+  padding: 118px 0;
+}
+#contact h2 span {
+  color: var(--brand-color);
+}
+#contact h3 {
+  color: var(--brand-color);
+  font-size: 30px;
+  font-weight: 900;
+  font-family: var(--font3);
+}
+#contact p {
+  margin: 33px 0 65px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+#contact .contIcon a iconify-icon {
+  color: var(--text-color);
+  font-size: 36px;
+}
+#contact form button,
+#contact form input,
+#contact form textarea {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+  padding: 15px 20px;
+  margin: 11px;
+  background: var(--bg-color);
+  border-radius: 10px;
+}
+#contact form textarea {
+  width: 100%;
+  height: 117px;
+}
+#contact form button {
+  width: 100%;
+}
+/**======== END HIER ========= */
+.backtop {
+  /* display: none; */
+  position: fixed;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: var(--brand-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 20px;
+  bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: 1px solid #fff;
+}
+.backtop iconify-icon {
+  font-size: 30px;
+  color: var(--bg-color);
+}
+.backtop.show {
+  opacity: 1;
+}
+
+.backtop.hide {
+  opacity: 0;
+}
