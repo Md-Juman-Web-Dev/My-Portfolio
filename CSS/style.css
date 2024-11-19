@@ -11,7 +11,7 @@
 :root {
   --bg-color: #050718;
   --second-bg-color: #171820;
-  --brand-color: #80b840;
+  --brand-color: #00eeff;
   --text-color: #fff;
   --font-family: 'Exo', sans-serif;
   --second-family: 'DM Sans', sans-serif;
@@ -50,6 +50,7 @@ body {
 header {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 header nav {
   width: 100%;
@@ -78,7 +79,7 @@ header nav .main-ul a {
   font-size: 22px;
   line-height: 114%;
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
   transition: 0.3s;
 }
 header nav .main-ul a:hover {
@@ -92,23 +93,23 @@ header nav .main-ul a:hover {
   font-weight: 200;
   font-size: 32px;
   line-height: 78%;
-  color: #fff;
+  color: var(--text-color);
 }
 #home .left-side h1 {
   font-weight: 700;
-  font-size: 90px;
-  line-height: 83%;
-  color: #fff;
+  font-size: 69px;
+  line-height: 31%;
+  color: var(--text-color);
   margin: 40px 0 20px;
 }
 #home .left-side h1 span {
-  color: #80b840;
+  color: var(--brand-color);
 }
 #home .left-side .skills {
   font-weight: 700;
   font-size: 30px;
   line-height: 250%;
-  color: #fff;
+  color: var(--text-color);
   display: inline-block;
 }
 #home .left-side .skills .typing {
@@ -116,7 +117,7 @@ header nav .main-ul a:hover {
   font-weight: 700;
   font-size: 50px;
   line-height: 200%;
-  color: #80b840;
+  color: var(--brand-color);
 }
 #home .btn-icons {
   margin-top: 66px;
@@ -124,15 +125,18 @@ header nav .main-ul a:hover {
 #home .left-side .hireMe-btn {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 74%;
-  color: #0c0c0c;
+  color: var(--bg-color);
   display: inline-block;
   padding: 16px 30px;
-  background: #80b840;
+  background: var(--brand-color);
   border-radius: 6px;
-  box-shadow: 0px 0px 30px 0px #80b840;
+  box-shadow: 0px 0px 30px 0px var(--brand-color);
   transition: 0.3s;
+}
+#home .left-side .hireMe-btn:hover {
+  box-shadow: none;
 }
 #home .icons {
   display: flex;
@@ -142,14 +146,12 @@ header nav .main-ul a:hover {
 #home .icons iconify-icon {
   font-size: 20px;
   padding: 5px;
-  color: #80b840;
+  color: var(--brand-color);
   border-radius: 50%;
   margin: 0 10px;
-  border: 2px solid #80b840;
+  border: 2px solid var(--brand-color);
 }
-#home .left-side .hireMe-btn:hover {
-  box-shadow: none;
-}
+
 /* baner left end  */
 #home .right-side {
   margin-top: 50px;
@@ -158,7 +160,7 @@ header nav .main-ul a:hover {
   width: 528px;
   height: 528px;
   border-radius: 50%;
-  border: 4px solid #b7d793;
+  border: 4px solid var(--brand-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +169,7 @@ header nav .main-ul a:hover {
   width: 469px;
   height: 469px;
   border-radius: 50%;
-  background: #313a36;
+  background: var(--second-bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,8 +182,8 @@ header nav .main-ul a:hover {
   border-radius: 100%;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgb(255, 255, 255) 0%,
-    rgb(128, 184, 64) 100%
+    rgb(0, 238, 255) 0%,
+    rgb(0, 238, 255) 100%
   );
   box-shadow: 4px 1px 9px 3px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -199,12 +201,12 @@ header nav .main-ul a:hover {
   font-size: 50px;
   line-height: 120%;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-color);
 }
 #about .text-border {
   height: 2px;
   width: 300px;
-  background: #80b840;
+  background: var(--brand-color);
 }
 #about .about-me {
   display: flex;
@@ -212,16 +214,15 @@ header nav .main-ul a:hover {
   align-items: center;
   flex-direction: column;
 }
-#about .about-border {
+.about-border {
   width: 300px;
   height: 2px;
   background: var(--text-color);
+  margin: 21px 0 29px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 21px 0 29px;
 }
-#about .border-whigt {
+.border-whigt {
   height: 3px;
   width: 120px;
   background: var(--brand-color);
@@ -231,14 +232,14 @@ header nav .main-ul a:hover {
   font-size: 50px;
   line-height: 120%;
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
 }
 #about .about-me p {
   font-weight: 400;
   font-size: 18px;
   line-height: 133%;
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
   margin-top: 20px;
   line-height: 26px;
   letter-spacing: 1px;
@@ -246,5 +247,87 @@ header nav .main-ul a:hover {
 /**========== ABOUT END HIEAR=============== */
 
 /**========== MY Skills stert HIEAR=============== */
-
+#mySkill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mySkill .titel {
+  flex-direction: column;
+  align-items: center;
+}
+#mySkill h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text-color);
+}
+#mySkill .imgBox img {
+  width: 100px;
+}
+#mySkill .phpBox,
+#mySkill .htmlBox,
+#mySkill .cssBox,
+#mySkill .btBox,
+#mySkill .jsBox,
+#mySkill .jqueryBox,
+#mySkill .mysqlBox,
+#mySkill .laravelBox {
+  margin: 17px 0;
+}
+#mySkill .skillLavelBox .skillName {
+  margin-left: 23px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text-color);
+}
+#mySkill .skillLavelBox .skilllavel {
+  border-radius: 20px;
+  width: 411px;
+  height: 23px;
+  background: var(--second-bg-color);
+  margin: 8px 0 0 23px;
+  position: relative;
+}
+.htmlBox .parsent,
+.cssBox .parsent,
+.btBox .parsent,
+.jsBox .parsent,
+.jqueryBox .parsent,
+.mysqlBox .parsent,
+.laravelBox .parsent,
+.phpBox .parsent {
+  border-radius: 20px;
+  width: 85%;
+  height: 23px;
+  background: var(--brand-color);
+}
+.jsBox .parsent {
+  width: 55%;
+}
+.jqueryBox .parsent {
+  width: 15%;
+}
+.mysqlBox .parsent {
+  width: 15%;
+}
+.laravelBox .parsent {
+  width: 15%;
+}
+.phpBox .parsent {
+  width: 15%;
+}
+#mySkill .skilllavel .parsentText {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+}
 /**========== MY Skills END HIEAR=============== */

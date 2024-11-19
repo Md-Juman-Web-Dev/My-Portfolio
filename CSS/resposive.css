@@ -3,22 +3,29 @@
     margin: 10px;
   }
   /* baner right */
-  #baner .right-side .img-box {
-    width: 400px;
-    height: 400px;
+  #home .right-side .img-box {
+    width: 350px;
+    height: 350px;
   }
-  #baner .right-side .img-box .img-bg {
-    width: 320px;
-    height: 320px;
+  /* #home .left-side {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  } */
+  #home .right-side .img-box .img-shadow {
+    width: 300px;
+    height: 300px;
   }
-  #baner .right-side .img-box .img-shadow {
-    width: 360px;
-    height: 360px;
+  #home .right-side .img-box .img-bg {
+    width: 250px;
+    height: 250px;
   }
-  #baner .right-side {
+  #home .right-side {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
   }
-  #baner .left-side .fest-hello {
+  #home .left-side .fest-hello {
     margin-top: 57px;
     display: inline-block;
     font-weight: 200;
@@ -27,16 +34,55 @@
     color: #fff;
   }
   /* baner left  */
-  #baner .left-side h1 {
+  #home .left-side h1 {
     font-size: 50px;
     margin: 22px 0 0px;
   }
-  #baner .left-side .skills .typing {
+  #home .left-side .skills .typing {
     font-size: 40px;
-    margin: 0;
+    margin: -20px 0 8px;
     display: block;
   }
-  #baner .icons {
+  #home .icons {
     margin: 5px 0 20px;
+  }
+  /* #home .icons {
+    display: flex;
+    justify-content: center;
+  } */
+  #home .left-side .hireMe-btn {
+    font-size: 25px;
+  }
+  /* HOME END HEAIR  */
+  #about h2 {
+    font-size: 30px;
+  }
+  #about .about-border {
+    width: 200px;
+  }
+  #about .about-me h3 {
+    font-size: 30px;
+  }
+  #about .about-me p {
+    font-size: 15px;
+  }
+
+  /* My Skill */
+  #mySkill .imgBox img {
+    width: 70px;
+  }
+  #mySkill .skillLavelBox .skilllavel {
+    width: 300px;
+    height: 20px;
+  }
+  .htmlBox .parsent,
+  .cssBox .parsent,
+  .btBox .parsent,
+  .jsBox .parsent,
+  .jqueryBox .parsent,
+  .mysqlBox .parsent,
+  .laravelBox .parsent,
+  .phpBox .parsent {
+    height: 20px;
   }
 }
