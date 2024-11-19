@@ -213,56 +213,57 @@ header nav .main-ul a:hover {
 #about {
   background: var(--second-bg-color);
   width: 100%;
-  height: 300px;
+  padding: 150px 0;
 }
 #about h2 {
   font-weight: 700;
   font-size: 36px;
   color: var(--text-color);
+  margin-bottom: 200px;
 }
 #about h2 span {
   color: var(--brand-color);
 }
-#about .text-border {
-  height: 2px;
-  width: 300px;
-  background: var(--brand-color);
-}
-#about .about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.about-border {
-  width: 220px;
-  height: 2px;
+#about .leftSide .bgBox .imgBox {
+  width: 244px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 50%;
+  stroke-width: 10px;
+  position: absolute;
+  border: 10px solid var(--second-bg-color);
   background: var(--text-color);
-  margin: 21px 0 29px;
-  display: flex;
-  justify-content: center;
+  bottom: 234px;
+  left: 50%;
+  transform: translatex(-50%);
 }
-.border-whigt {
-  height: 3px;
-  width: 100px;
+#about .leftSide .bgBox img {
+  width: 240px;
+}
+#about .leftSide {
+  border-radius: 10px;
+  width: 363px;
   background: var(--brand-color);
+  height: 355px;
+  position: relative;
 }
-#about .about-me h3 {
+#about .leftSide .textBox {
+  margin-top: 140px;
+}
+#about .leftSide .textBox h4 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-color);
+  text-align: center;
+}
+#about .leftSide .textBox span {
+  font-family: var(--font-family);
   font-weight: 600;
-  font-size: 50px;
-  line-height: 120%;
+  font-size: 20px;
+  line-height: 180%;
   text-align: center;
-  color: var(--text-color);
-}
-#about .about-me p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 133%;
-  text-align: center;
-  color: var(--text-color);
-  margin-top: 20px;
-  line-height: 26px;
-  letter-spacing: 1px;
+  color: var(--second-bg-color);
+  display: block;
 }
 /**========== ABOUT END HIEAR=============== */
 
@@ -387,6 +388,7 @@ header nav .main-ul a:hover {
 }
 #services .serviceCaet:hover {
   border: 2px solid var(--brand-color);
+  transform: scale(1.05);
 }
 #services .serviceCaet .iconBox {
   width: 100%;
@@ -433,9 +435,9 @@ header nav .main-ul a:hover {
 }
 /**========== MY SERVICES END HIER=============== */
 
-/**========CONTACT ME START HIER ========= */
+/**========PROTFOLIO START HIER ========= */
 #Portfolio {
-  padding: 65px 0 130px;
+  padding: 100px 0 130px;
 }
 #Portfolio h2 {
   margin-bottom: 65px;
@@ -453,14 +455,33 @@ header nav .main-ul a:hover {
   height: 259px;
   margin: 10px 3px;
 }
+#Portfolio .pfBox img {
+  transition: 0.5s ease;
+}
+#Portfolio .pfBox:hover img {
+  transform: scale(1.1);
+}
+#Portfolio .animetion p {
+  font-size: 18px;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 500;
+}
+#Portfolio .imgBox iconify-icon {
+  color: var(--bg-color);
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 10px;
+  background-color: var(--text-color);
+}
 #Portfolio .animetion {
   position: absolute;
   border-radius: 16px;
-  width: 376px;
-  height: 259px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(180deg, #0ef 0%, rgba(255, 255, 255, 0) 100%);
   top: 0;
-  left: 12px;
+  left: 0;
   opacity: 0;
   transform: translatey(100%);
   transition: 0.5s;
@@ -472,21 +493,22 @@ header nav .main-ul a:hover {
 
 #Portfolio .animetion h3 {
   font-weight: 700;
-  padding-top: 77px;
+  padding-top: 50px;
   font-size: 28px;
   line-height: 129%;
   text-align: center;
   color: var(--text-color);
 }
 
-/**========CONTACT ME END HIER ========= */
-/**======== START HIER ========= */
+/**========PROTFOLIO ME END HIER ========= */
+/**========CONTACT ME START HIER ========= */
 #contact {
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--second-bg-color);
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+  /* height: 90vh; */
 }
 #contact h2 {
   font-weight: 700;
@@ -535,7 +557,9 @@ header nav .main-ul a:hover {
 #contact form button {
   width: 100%;
 }
-/**======== END HIER ========= */
+/**========CONTACT ME END HIER ========= */
+/**========BACL TO TOP START HIER ========= */
+
 .backtop {
   /* display: none; */
   position: fixed;
@@ -543,20 +567,20 @@ header nav .main-ul a:hover {
   width: 40px;
   height: 40px;
   color: #fff;
-  background: var(--brand-color);
-  border-radius: 50%;
+  background: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  right: 20px;
-  bottom: 15px;
+  right: 30px;
+  bottom: 20px;
   opacity: 0;
   transition: opacity 0.3s;
-  border: 1px solid #fff;
+  border: 3px solid var(--brand-color);
+  border-radius: 2px;
 }
 .backtop iconify-icon {
   font-size: 30px;
-  color: var(--bg-color);
+  color: var(--text-color);
 }
 .backtop.show {
   opacity: 1;
@@ -564,4 +588,23 @@ header nav .main-ul a:hover {
 
 .backtop.hide {
   opacity: 0;
+}
+
+/**========BACK TO TOP END HIER ========= */
+/**========FOOTER START HIER ========= */
+footer {
+  width: 100%;
+  height: 110px;
+  background: var(--bg-color);
+}
+footer span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110px;
+  color: var(--text-color);
+}
+/**========FOOTER END HIER ========= */
+nav a.active {
+  color: red;
+  font-weight: bold;
 }
