@@ -447,6 +447,9 @@ header nav .main-ul a:hover {
   text-align: center;
   color: var(--text-color);
 }
+#Portfolio h2 span {
+  color: var(--brand-color);
+}
 #Portfolio .pfBox {
   position: relative;
   overflow: hidden;
@@ -503,13 +506,10 @@ header nav .main-ul a:hover {
 /**========PROTFOLIO ME END HIER ========= */
 /**========CONTACT ME START HIER ========= */
 #contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: var(--second-bg-color);
   padding-bottom: 200px;
-  /* height: 90vh; */
 }
+
 #contact h2 {
   font-weight: 700;
   font-size: 36px;

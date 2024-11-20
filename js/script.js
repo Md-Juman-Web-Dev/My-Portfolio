@@ -16,7 +16,7 @@ backTop.addEventListener('click', function () {
   });
 });
 
-let sections = document.querySelectorAll('section');
+/* let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav .navLink');
 
 window.onscroll = () => {
@@ -37,3 +37,4 @@ window.onscroll = () => {
     }
   });
 };
+ */
