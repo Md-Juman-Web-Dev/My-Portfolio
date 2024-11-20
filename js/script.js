@@ -36,5 +36,26 @@ window.onscroll = () => {
       });
     }
   });
-};
+}; */
+
+/* let sideBar = document.querySelector('.sideber');
+
+document.addEventListener('click', function (event) {
+  const showSidbar = document.querySelector('.show');
+  if (sideBar.classList.contains(showSidbar)) {
+    if (!sideBar.event.target) {
+      sideBar.classList.remove('show');
+    }
+  }
+});
  */
+let sideBar = document.querySelector('.sideber');
+
+document.addEventListener('click', function (event) {
+  if (sideBar.classList.contains('show')) {
+    // Check if the clicked target is outside the sidebar
+    if (!sideBar.contains(event.target)) {
+      sideBar.classList.remove('show');
+    }
+  }
+});

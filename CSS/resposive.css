@@ -156,6 +156,22 @@
   #contact {
     padding-bottom: 50px;
   }
+
+  .sideber {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #323946;
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    padding: 30px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+  .sideber.show {
+    transform: translateX(0%);
+  }
 }
 @media (max-width: 1260px) {
   header nav .main-ul li {
