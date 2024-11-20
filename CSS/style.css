@@ -20,6 +20,12 @@
   --third-family: 'Poppins', sans-serif;
   --font3: 'Manrope', sans-serif;
 }
+.derkMode {
+  --bg-color: #fff;
+  --second-bg-color: #999;
+  --brand-color: #ddd;
+  --text-color: #000;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -90,6 +96,56 @@ header nav .main-ul a:hover {
   color: var(--brand-color);
 }
 
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
 /**========== HEADER END HIEAR=============== */
 
 /**========== BEANER STERT HIEAR============= */
@@ -167,8 +223,13 @@ header nav .main-ul a:hover {
   border-radius: 50%;
   margin: 0 10px;
   border: 2px solid var(--brand-color);
+  transition: 0.3s;
 }
-
+#home .icons iconify-icon:hover {
+  background: var(--brand-color);
+  color: var(--bg-color);
+  box-shadow: 0px 0px 12px 6px var(--brand-color);
+}
 /* baner left end  */
 #home .right-side {
   margin-top: 50px;
@@ -534,10 +595,23 @@ header nav .main-ul a:hover {
   line-height: 150%;
   color: var(--text-color);
 }
-#contact .contIcon a iconify-icon {
-  color: var(--text-color);
-  font-size: 36px;
+#contact .contIcon a {
+  margin: 0 10px;
 }
+#contact .contIcon a iconify-icon {
+  font-size: 20px;
+  padding: 5px;
+  color: var(--brand-color);
+  border-radius: 50%;
+  border: 2px solid var(--brand-color);
+  transition: 0.3s;
+}
+#contact .contIcon a iconify-icon:hover {
+  background: var(--brand-color);
+  color: var(--bg-color);
+  box-shadow: 0px 0px 12px 6px var(--brand-color);
+}
+
 #contact form button,
 #contact form input,
 #contact form textarea {
@@ -576,7 +650,7 @@ header nav .main-ul a:hover {
   opacity: 0;
   transition: opacity 0.3s;
   border: 3px solid var(--brand-color);
-  border-radius: 2px;
+  border-radius: 40px;
 }
 .backtop iconify-icon {
   font-size: 30px;
@@ -584,8 +658,13 @@ header nav .main-ul a:hover {
 }
 .backtop.show {
   opacity: 1;
+  transition: 0.3s;
 }
-
+.backtop:hover {
+  color: var(--bg-color);
+  box-shadow: 0 0 22px 5px #00eeff;
+  background: var(--brand-color);
+}
 .backtop.hide {
   opacity: 0;
 }
@@ -604,7 +683,3 @@ footer span {
   color: var(--text-color);
 }
 /**========FOOTER END HIER ========= */
-nav a.active {
-  color: red;
-  font-weight: bold;
-}
