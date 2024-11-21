@@ -9,6 +9,13 @@
   border: none;
   list-style: none;
   font-family: 'Montserrat', sans-serif;
+
+  outline-offset: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  list-style: none;
+  transition: all 0.5s linear;
+  scroll-behavior: smooth;
 }
 :root {
   --bg-color: #1f242d;
@@ -23,7 +30,7 @@
 .derkMode {
   --bg-color: #fff;
   --second-bg-color: #999;
-  --brand-color: #ddd;
+  --brand-color: #121212;
   --text-color: #000;
 }
 html {
@@ -57,6 +64,22 @@ body {
 }
 
 /**========== HEADER STERT HIEAR=============== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--second-bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--second-bg-color);
+}
 
 header {
   position: sticky;
@@ -82,7 +105,18 @@ header nav .logo {
 }
 header nav .main-ul li {
   margin: 0 25px;
+  position: relative;
 }
+/* header nav .main-ul li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--brand-color);
+  bottom: 0;
+  left: 0;
+} */
+
 header nav .main-ul a {
   font-family: var(--second-family);
   font-weight: 400;
@@ -96,12 +130,16 @@ header nav .main-ul a:hover {
   color: var(--brand-color);
 }
 
+.typing {
+  color: var(--brand-color);
+  font-weight: 500;
+}
 .switch {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 3.5em;
-  height: 2em;
+  width: 2.5em;
+  height: 1.5em;
 }
 
 /* Hide default HTML checkbox */
@@ -113,7 +151,7 @@ header nav .main-ul a:hover {
 
 /* The slider */
 .slider {
-  --background: #28096b;
+  --background: #1f242d;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -128,8 +166,8 @@ header nav .main-ul a:hover {
 .slider:before {
   position: absolute;
   content: '';
-  height: 1.4em;
-  width: 1.4em;
+  height: 1em;
+  width: 1em;
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
@@ -139,7 +177,7 @@ header nav .main-ul a:hover {
 }
 
 input:checked + .slider {
-  background-color: #522ba7;
+  background-color: #1f242d;
 }
 
 input:checked + .slider:before {
@@ -155,7 +193,6 @@ input:checked + .slider:before {
   display: flex;
   padding: 85px 0 190px;
 }
-
 #home .left-side .fest-hello {
   font-weight: 200;
   font-size: 32px;
