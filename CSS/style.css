@@ -30,7 +30,7 @@
 .derkMode {
   --bg-color: #fff;
   --second-bg-color: #999;
-  --brand-color: #121212;
+  --brand-color: #00eeff;
   --text-color: #000;
 }
 html {
@@ -231,11 +231,10 @@ input:checked + .slider:before {
   padding: 16px 30px;
   background: var(--brand-color);
   border-radius: 6px;
-  box-shadow: 0px 0px 30px 0px var(--brand-color);
   transition: 0.3s;
 }
 #home .left-side .hireMe-btn:hover {
-  box-shadow: none;
+  box-shadow: 0px 0px 30px 0px var(--brand-color);
 }
 #home .icons {
   display: flex;
@@ -399,7 +398,7 @@ input:checked + .slider:before {
 #mySkill .skillLavelBox .skilllavel {
   border-radius: 20px;
   width: 411px;
-  height: 23px;
+  height: 17px;
   background: var(--second-bg-color);
   margin: 8px 0 0 23px;
   position: relative;
@@ -414,23 +413,8 @@ input:checked + .slider:before {
 .phpBox .parsent {
   border-radius: 20px;
   width: 85%;
-  height: 23px;
+  height: 17px;
   background: var(--brand-color);
-}
-.jsBox .parsent {
-  width: 55%;
-}
-.jqueryBox .parsent {
-  width: 15%;
-}
-.mysqlBox .parsent {
-  width: 15%;
-}
-.laravelBox .parsent {
-  width: 15%;
-}
-.phpBox .parsent {
-  width: 15%;
 }
 #mySkill .skilllavel .parsentText {
   font-weight: 600;
@@ -441,6 +425,89 @@ input:checked + .slider:before {
   transform: translateY(-50%);
   right: 14px;
 }
+.htmlBox .parsent {
+  width: 100%;
+  animation: htmlBox 3s ease-in-out;
+}
+.cssBox .parsent {
+  width: 100%;
+  animation: htmlBox 4s ease-in-out;
+}
+.btBox .parsent {
+  width: 100%;
+  animation: htmlBox 4s ease-in-out;
+}
+.jsBox .parsent {
+  width: 55%;
+  animation: jsBox 4s ease-in-out;
+}
+.jqueryBox .parsent {
+  width: 15%;
+  animation: jqueryBox 4s ease-in-out;
+}
+.mysqlBox .parsent {
+  width: 15%;
+  animation: mysqlBox 4s ease-in-out;
+}
+.laravelBox .parsent {
+  width: 15%;
+  animation: laravelBox 4s ease-in-out;
+}
+.phpBox .parsent {
+  width: 15%;
+  animation: phpBox 4s ease-in-out;
+}
+
+@keyframes htmlBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes jsBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes jqueryBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes mysqlBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes laravelBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes phpBox {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+
 /**========== MY Skills END HIEAR=============== */
 /**========== MY SERVICES SERT HIEAR=============== */
 #services {
