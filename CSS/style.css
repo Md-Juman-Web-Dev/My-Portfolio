@@ -7,9 +7,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  list-style: none;
   font-family: 'Montserrat', sans-serif;
-
   outline-offset: none;
   box-sizing: border-box;
   text-transform: capitalize;
@@ -75,18 +73,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-100%);
-  transition: 1s;
-  animation-name: navBer;
 }
-@keyframes navBer {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -109,6 +97,16 @@ body {
   top: 0;
   z-index: 100;
   background-color: var(--second-bg-color);
+  animation-duration: 1s;
+  animation-name: navBer;
+}
+@keyframes navBer {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 header nav {
   width: 100%;
