@@ -48,7 +48,7 @@ darkMode.addEventListener('change', function () {
 
 $(window).scroll(function () {
   let scrollTop = $(window).scrollTop();
-  if (scrollTop > 50) {
+  if (scrollTop >= 100) {
     $('nav').addClass('fixed');
   } else {
     $('nav').removeClass('fixed');
