@@ -45,3 +45,16 @@ darkMode.addEventListener('change', function () {
     body.classList.remove('derkMode');
   }
 });
+
+$(window).scroll(function () {
+  let scrollTop = $(window).scrollTop();
+  if (scrollTop > 50) {
+    $('nav').addClass('fixed');
+  } else {
+    $('nav').removeClass('fixed');
+  }
+});
+
+$(window).on('load', function () {
+  $('#preloader').fadeOut();
+});
