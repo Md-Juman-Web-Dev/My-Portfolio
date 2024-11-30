@@ -124,6 +124,7 @@ header nav .logo {
   font-weight: 600;
   font-size: 30px;
   color: var(--brand-color);
+  width: 150px;
 }
 header nav .main-ul li {
   margin: 0 25px;
@@ -697,11 +698,12 @@ input:checked + .slider:before {
 #contact h2 span {
   color: var(--brand-color);
 }
-#contact h3 {
+#contact .logo img {
   color: var(--brand-color);
   font-size: 30px;
   font-weight: 900;
   font-family: var(--font3);
+  width: 150px;
 }
 #contact p {
   margin: 33px 0 65px;
