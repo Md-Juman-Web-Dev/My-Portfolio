@@ -695,6 +695,8 @@ input:checked + .slider:before {
   color: var(--text-color);
   padding: 118px 0;
 }
+
+
 #contact h2 span {
   color: var(--brand-color);
 }
