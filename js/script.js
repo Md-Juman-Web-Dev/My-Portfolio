@@ -45,6 +45,10 @@ darkMode.addEventListener('change', function () {
     body.classList.remove('derkMode');
   }
 });
+var scroll = new LocomotiveScroll({
+  el: document.querySelector('main'),
+  smooth: true,
+});
 
 $(window).scroll(function () {
   let scrollTop = $(window).scrollTop();
